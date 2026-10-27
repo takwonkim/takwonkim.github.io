@@ -45,12 +45,15 @@ p { margin-bottom: 15px; }
 .profile-identity h1 span { display: inline-block; margin-left: 14px; font-size: 23px; font-weight: 400; color: #465257; letter-spacing: 0; }
 .profile-identity p { font-size: 16px; line-height: 1.7; margin-bottom: 0; color: #465257; }
 .profile-identity .position { color: #283438; font-size: 18px; margin-bottom: 3px; }
+.profile-identity .affiliation-ko { font-size: 15px; line-height: 1.7; margin-top: 8px; color: #526064; word-break: keep-all; }
 .profile-identity a { color: var(--accent); text-decoration: none; }
 .profile-identity a:hover { color: var(--accent); text-decoration: underline; }
 .panel { margin-bottom: 34px; }
 .panel h2 { font-size: 24px; margin-bottom: 17px; }
 .panel p { font-size: 16px; }
 .about-intro > p { max-width: 760px; font-size: 19px; line-height: 1.8; margin-bottom: 28px; }
+.about-intro > p:first-child { margin-bottom: 18px; }
+.about-intro > p.academic-bio { font-size: 16px; line-height: 1.75; color: #526064; }
 .about-intro h2 { font-size: 20px; margin-bottom: 14px; }
 .interest-list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 40px; padding-left: 20px; margin: 0; font-size: 17px; color: #354247; }
 .interest-list li::marker { color: var(--accent); }
@@ -65,6 +68,9 @@ p { margin-bottom: 15px; }
 .contact-panel dt { font-size: 15px; font-weight: 600; color: #354247; margin-bottom: 5px; }
 .contact-panel dd { margin: 0 0 16px; overflow-wrap: anywhere; }
 .contact-panel dd:last-child { margin-bottom: 0; }
+.contact-ko { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--rule); word-break: keep-all; overflow-wrap: anywhere; }
+.contact-panel .contact-ko p, .about-contact .contact-ko p { font-size: 15px; line-height: 1.75; color: #526064; margin: 0 0 12px; }
+.contact-ko p:last-child { margin-bottom: 0; }
 .email-list { display: flex; flex-direction: column; gap: 4px; overflow-wrap: anywhere; }
 .email-list a { text-decoration: none; }
 .email-list a:hover { text-decoration: underline; }
