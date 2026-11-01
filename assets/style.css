@@ -142,9 +142,11 @@ p { margin-bottom: 15px; }
 .teaching-term h2 { font-size: 23px; font-weight: 500; margin-bottom: 18px; color: var(--accent); }
 .teaching-term ul { padding-left: 20px; margin: 0; font-size: 17px; }
 .teaching-term li + li { margin-top: 10px; }
-.background-layout { display: grid; grid-template-columns: minmax(0,1fr) 285px; gap: 24px; align-items: start; }
-.background-section { padding: 24px; background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; margin-bottom: 20px; }
-.background-section h2, .about-contact h2 { font-size: 22px; font-weight: 500; margin-bottom: 20px; color: var(--accent); }
+.background-layout { display: grid; grid-template-columns: minmax(0,1fr) 285px; gap: 24px; margin-bottom: 20px; align-items: start; }
+.background-section, .links-section, .about-photos { padding: 24px; background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; }
+.background-section { margin-bottom: 20px; }
+.background-section:last-child { margin-bottom: 0; }
+.background-section > h2, .about-contact > h2, .links-section > h2, .about-photos > h2 { font-size: 22px; font-weight: 500; line-height: 1.4; margin: 0 0 20px; color: var(--accent); }
 .biography { font-size: 17px; line-height: 1.85; }
 .biography h3 { font-size: 18px; font-weight: 600; line-height: 1.6; margin: 24px 0 8px; }
 .biography p { margin-bottom: 20px; }
@@ -153,21 +155,21 @@ p { margin-bottom: 15px; }
 .timeline li { padding: 16px 0; border-bottom: 1px solid var(--rule-soft); }
 .timeline li:first-child { padding-top: 0; }
 .timeline li:last-child { padding-bottom: 0; border: 0; }
-.about-contact { padding: 20px; background: var(--tint); border: 1px solid var(--accent-rule); border-radius: 8px; }
+.about-contact { padding: 24px; background: var(--tint); border: 1px solid var(--accent-rule); border-radius: 8px; }
 .about-contact p { color: #526064; font-size: 16px; margin-bottom: 20px; }
 .about-contact .email-list { font-size: 16px; margin: 20px 0; gap: 6px; }
-.about-photos { margin-top: 38px; padding-top: 28px; border-top: 1px solid var(--rule); scroll-margin-top: 24px; }
-.about-photos > h2 { font-size: 22px; font-weight: 500; margin-bottom: 20px; color: var(--accent); }
+.about-photos { margin-top: 20px; scroll-margin-top: 24px; }
 .photo-gallery { columns: 2; column-gap: 24px; }
 .photo-gallery figure { margin: 0 0 28px; break-inside: avoid; }
 .photo-frame { display: block; border: 1px solid var(--rule-soft); border-radius: 4px; overflow: hidden; }
 .photo-frame img { display: block; width: 100%; height: auto; }
 .photo-frame:hover { border-color: #9eb7b4; }
 .photo-gallery figcaption { margin-top: 10px; color: #465257; font-size: 15px; line-height: 1.6; }
-.about-links { margin: 32px 0; }
-.links-section { margin-bottom: 32px; }
+.about-links { margin: 0; }
+.about-links .profile-links { padding: 0; border: 0; border-radius: 0; background: transparent; }
+.about-links .profile-link:nth-child(-n+2) { padding-top: 0; }
+.links-section { margin-bottom: 20px; }
 .links-section:last-child { margin-bottom: 0; }
-.links-section > h2 { font-size: 22px; font-weight: 500; color: var(--accent); margin-bottom: 16px; }
 .profile-links { display: grid; grid-template-columns: 1fr 1fr; column-gap: 32px; padding: 0 22px; background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; }
 .profile-link { display: flex; gap: 18px; padding: 22px 0; align-items: center; text-decoration: none; }
 .profile-link:nth-child(n+3) { border-top: 1px solid var(--rule-soft); }
@@ -237,15 +239,15 @@ p { margin-bottom: 15px; }
   .teaching-term h2 { font-size: 22px; }
   .teaching-term ul, .timeline { font-size: 16px; }
   .teaching-term li + li { margin-top: 8px; }
-  .background-section { padding: 20px; }
-  .background-section h2, .about-contact h2, .about-photos > h2 { font-size: 21px; }
+  .background-section, .about-contact, .links-section, .about-photos { padding: 20px; }
+  .background-section > h2, .about-contact > h2, .links-section > h2, .about-photos > h2 { font-size: 21px; }
   .about-contact { margin-top: 0; }
-  .about-photos { margin-top: 34px; }
+  .about-photos { margin-top: 20px; }
   .photo-gallery { columns: 1; }
   .photo-gallery figure { margin-bottom: 24px; }
   .profile-links { padding: 0 16px; }
-  .links-section > h2 { font-size: 21px; }
   .profile-link { padding: 20px 0; gap: 14px; }
+  .about-links .profile-link:nth-child(2) { padding-top: 20px; }
   .profile-link + .profile-link { border-top: 1px solid var(--rule-soft); }
   .profile-link strong { font-size: 18px; }
   .profile-link small { font-size: 14px; }
