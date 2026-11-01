@@ -53,7 +53,7 @@ p { margin-bottom: 15px; }
 .panel p { font-size: 16px; }
 .about-intro > p { max-width: 760px; font-size: 19px; line-height: 1.8; margin-bottom: 28px; }
 .about-intro > p:first-child { margin-bottom: 18px; }
-.about-intro > p.academic-bio { font-size: 16px; line-height: 1.75; color: #526064; }
+.about-intro > p.bio-link { font-size: 16px; line-height: 1.75; color: #526064; }
 .about-intro h2 { font-size: 20px; margin-bottom: 14px; }
 .interest-list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 40px; padding-left: 20px; margin: 0; font-size: 17px; color: #354247; }
 .interest-list li::marker { color: var(--accent); }
@@ -137,6 +137,9 @@ p { margin-bottom: 15px; }
 .background-layout { display: grid; grid-template-columns: minmax(0,1fr) 285px; gap: 24px; align-items: start; }
 .background-section { padding: 24px; background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; margin-bottom: 20px; }
 .background-section h2, .about-contact h2 { font-size: 22px; font-weight: 500; margin-bottom: 20px; color: var(--accent); }
+.biography { font-size: 17px; line-height: 1.85; }
+.biography p { margin-bottom: 20px; }
+.biography p:last-child { margin-bottom: 0; }
 .timeline { list-style: none; padding: 0; margin: 0; font-size: 17px; }
 .timeline li { padding: 16px 0; border-bottom: 1px solid var(--rule-soft); }
 .timeline li:first-child { padding-top: 0; }
@@ -187,6 +190,7 @@ p { margin-bottom: 15px; }
   .profile-identity p { font-size: 15px; }
   .profile-identity .position { font-size: 17px; margin-bottom: 6px; }
   .about-intro > p { font-size: 18px; }
+  .biography { font-size: 16px; }
   .panel h2 { font-size: 22px; }
   .interest-list { display: block; font-size: 16px; }
   .interest-list li + li { margin-top: 8px; }
