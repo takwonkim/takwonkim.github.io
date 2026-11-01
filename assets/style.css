@@ -173,10 +173,14 @@ p { margin-bottom: 15px; }
 .coauthor-links .profile-link strong { margin-bottom: 0; }
 .profile-link small { display: block; font-size: 15px; line-height: 1.6; color: #526064; }
 .profile-link > span[aria-hidden] { margin-left: auto; color: var(--muted); }
-.site-footer { max-width: 1016px; margin: 0 auto; border-top: 1px solid var(--rule); padding: 21px 0 30px; display: flex; gap: 24px; font-size: 13px; color: var(--muted); }
-.site-footer > span:last-child { margin-left: auto; }
-.site-footer a { text-decoration: none; color: var(--muted); }
-.site-footer a span { margin-left: 8px; }
+.site-footer { max-width: 1016px; margin: 0 auto; border-top: 1px solid var(--rule); padding: 24px 0 30px; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; font-size: 13px; color: var(--muted); }
+.footer-profile { display: grid; gap: 4px; }
+.site-footer a { text-decoration: none; color: inherit; }
+.site-footer .footer-name { font-size: 15px; font-weight: 600; color: var(--ink); }
+.footer-name span { margin-left: 8px; font-size: 13px; font-weight: 400; color: var(--muted); }
+.site-footer .footer-email { color: var(--accent); }
+.footer-email:hover { text-decoration: underline; }
+.footer-updated { padding-top: 3px; white-space: nowrap; }
 @media (max-width: 1080px) {
   .site-footer { margin-left: 32px; margin-right: 32px; }
 }
@@ -239,8 +243,8 @@ p { margin-bottom: 15px; }
   .profile-link + .profile-link { border-top: 1px solid var(--rule-soft); }
   .profile-link strong { font-size: 18px; }
   .profile-link small { font-size: 14px; }
-  .site-footer { margin: 0 23px; flex-wrap: wrap; gap: 8px 20px; font-size: 12px; }
-  .site-footer > span:last-child { margin-left: 0; }
+  .site-footer { margin: 0 23px; flex-direction: column; gap: 16px; font-size: 12px; }
+  .footer-updated { padding-top: 0; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 @media print {
