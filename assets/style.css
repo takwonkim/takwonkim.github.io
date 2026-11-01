@@ -117,8 +117,8 @@ p { margin-bottom: 15px; }
 .year-nav a:hover { background: var(--tint); }
 .talk-year { display: grid; grid-template-columns: 92px minmax(0,1fr); gap: 24px; padding: 24px; margin-bottom: 20px; background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; scroll-margin-top: 25px; }
 .talk-year:target { border-color: var(--accent); }
-.talk-year h2 { font-size: 24px; font-weight: 500; margin: 0; color: var(--accent); }
-.talk-year h2 span { display: block; font-size: 13px; font-weight: 400; color: var(--muted); margin-top: 8px; }
+.talk-year > h3 { font-size: 24px; font-weight: 500; margin: 0; color: var(--accent); }
+.talk-year > h3 span { display: block; font-size: 13px; font-weight: 400; color: var(--muted); margin-top: 8px; }
 .talk-year ol { max-width: 800px; padding: 0; margin: 0; list-style: none; }
 .talk-year li { display: grid; grid-template-columns: minmax(0,1fr) 145px; gap: 20px; align-items: start; padding: 20px 0; border-bottom: 1px solid var(--rule-soft); }
 .talk-year li:first-child { padding-top: 0; }
@@ -129,9 +129,13 @@ p { margin-bottom: 15px; }
 .talk-venue { font-size: 15px; line-height: 1.7; color: #526064; margin: 6px 0 0; }
 .talk-date { font-size: 14px; line-height: 1.7; color: #526064; text-align: right; margin: 2px 0 0; }
 .events-section + .events-section { margin-top: 38px; }
-.events-section > h2 { font-size: 23px; font-weight: 500; color: var(--ink); margin-bottom: 18px; }
-.event-year > h3 { font-size: 24px; font-weight: 500; margin: 0; color: var(--accent); }
+.events-section > h3 { font-size: 20px; font-weight: 500; color: var(--ink); margin-bottom: 18px; }
+.event-year > h4 { font-size: 24px; font-weight: 500; line-height: 1.4; margin: 0; color: var(--accent); }
 .event-title span { font-size: 12px; margin-left: 7px; color: #95a09f; }
+.activity-nav a { font-size: 16px; padding: 8px 16px; }
+.activity-section { scroll-margin-top: 26px; }
+.activity-section > h2 { font-size: 26px; font-weight: 500; margin: 0 0 20px; }
+.activity-section + .activity-section { margin-top: 48px; padding-top: 36px; border-top: 1px solid var(--rule); }
 .teaching-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .teaching-term { padding: 24px; background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; }
 .eyebrow { color: #526064; font-size: 14px; margin-bottom: 8px; }
@@ -160,6 +164,7 @@ p { margin-bottom: 15px; }
 .photo-frame img { display: block; width: 100%; height: auto; }
 .photo-frame:hover { border-color: #9eb7b4; }
 .photo-gallery figcaption { margin-top: 10px; color: #465257; font-size: 15px; line-height: 1.6; }
+.about-links { margin: 32px 0; }
 .links-section { margin-bottom: 32px; }
 .links-section:last-child { margin-bottom: 0; }
 .links-section > h2 { font-size: 22px; font-weight: 500; color: var(--accent); margin-bottom: 16px; }
@@ -220,8 +225,9 @@ p { margin-bottom: 15px; }
   .paper-year { display: block; }
   .year-label { padding: 18px 14px 0; }
   .talk-year { display: block; padding: 20px; }
-  .talk-year h2 { display: flex; justify-content: space-between; align-items: center; margin: 0 0 18px; font-size: 23px; }
-  .talk-year h2 span { margin: 0; }
+  .talk-year > h3 { display: flex; justify-content: space-between; align-items: center; margin: 0 0 18px; font-size: 23px; }
+  .talk-year > h3 span { margin: 0; }
+  .event-year > h4 { margin-bottom: 18px; }
   .talk-year li { grid-template-columns: minmax(0,1fr); gap: 6px; padding: 18px 0; }
   .talk-title { font-size: 17px; }
   .talk-venue { font-size: 14px; }
