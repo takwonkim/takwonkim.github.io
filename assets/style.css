@@ -132,7 +132,6 @@ p { margin-bottom: 15px; }
 .events-section > h2 { font-size: 23px; font-weight: 500; color: var(--ink); margin-bottom: 18px; }
 .event-year > h3 { font-size: 24px; font-weight: 500; margin: 0; color: var(--accent); }
 .event-title span { font-size: 12px; margin-left: 7px; color: #95a09f; }
-.event-role { font-size: 14px; line-height: 1.7; margin: 7px 0 0; color: var(--accent); }
 .teaching-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .teaching-term { padding: 24px; background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; }
 .eyebrow { color: #526064; font-size: 14px; margin-bottom: 8px; }
