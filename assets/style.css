@@ -142,6 +142,7 @@ p { margin-bottom: 15px; }
 .background-section { padding: 24px; background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; margin-bottom: 20px; }
 .background-section h2, .about-contact h2 { font-size: 22px; font-weight: 500; margin-bottom: 20px; color: var(--accent); }
 .biography { font-size: 17px; line-height: 1.85; }
+.biography h3 { font-size: 18px; font-weight: 600; line-height: 1.6; margin: 24px 0 8px; }
 .biography p { margin-bottom: 20px; }
 .biography p:last-child { margin-bottom: 0; }
 .timeline { list-style: none; padding: 0; margin: 0; font-size: 17px; }
