@@ -129,6 +129,7 @@ p { margin-bottom: 15px; }
 .talk-venue { font-size: 15px; line-height: 1.7; color: #526064; margin: 6px 0 0; }
 .talk-date { font-size: 14px; line-height: 1.7; color: #526064; text-align: left; margin: 2px 0 0; }
 .talk-date .date-value { display: inline-grid; grid-template-columns: 2.4em auto; column-gap: .35em; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.talk-date .date-number { display: inline-block; width: 2ch; text-align: center; }
 .talk-date .date-status { display: block; margin-top: 3px; font-size: 12px; line-height: 1.5; color: var(--muted); }
 .events-section + .events-section { margin-top: 38px; }
 .events-section > h3 { font-size: 20px; font-weight: 500; color: var(--ink); margin-bottom: 18px; }
